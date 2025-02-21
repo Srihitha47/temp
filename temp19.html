@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML</title>
+    <script>
+        function changeColor() {
+            var color = document.getElementById('txtColor').value;
+            var bgcolor = document.getElementById('BGCOLOR').value;
+            document.getElementById('divColor').style.color = color;
+            document.getElementById('divColor').style.backgroundColor = bgcolor;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtColor" placeholder="enter color">
+    <select id="BGCOLOR">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <button onclick="changeColor()">Change Color</button>
+    <div id="divColor">Hello World!</div>
+    
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function addcolor(){
+        let i=document.getElementById("txtcolor").value;
+        txtdiv.style.color=i;
+    }
+    function change()
+    {
+        let z= document.getElementById("type").value;
+          document.getElementById('textdiv').style.background=z;
+    }
+    
+</script>
+</head>
+<body>
+    <p><input type="text" id="txtcolor" placeholder="enter color"</p>
+    <p><select id="type" onchange="change()">
+        <option value=0>--Select--</option>
+        <option value=1>Red</option>
+        <option value=2>Blue</option>
+        </select></p>
+    <button onclick="addcolor()">submit</button>
+    <div id="txtdiv">Hello world</div>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML</title>
+    <script>
+        function changeColor() {
+            var color = document.getElementById('txtColor').value;
+            var bgcolor = document.getElementById('BGCOLOR').value;
+            document.getElementById('divColor').style.color = color;
+            document.getElementById('divColor').style.backgroundColor = bgcolor;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txtColor" placeholder="enter color">
+    <select id="BGCOLOR">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <button onclick="changeColor()">Change Color</button>
+    <div id="divColor">Hello World!</div>
+    
+</body>
+</html> -->

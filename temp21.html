@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let products=["apple","mango","orange"];
+        // products.forEach((v)=>{
+        //     console.log(v)
+        // })
+        products.forEach((a,b)=>{
+            console.log(b);
+
+        })//{{here 2nd is index and 1st is value}}
+        //{{replacement of for loop}}
+        products.forEach((value,index)=>{
+            console.log(value,index);
+        })
+        let score=[31,32,33,34,35]
+        score.forEach((value,index)=>{
+           new_score=(value+5)
+           console.log(new_score)
+        })
+
+        let sco=[33,34,35,36,37];
+        let new_scr=sco.map((value,index)=>{
+            return value+5;
+        });//{{map used for modifications}}
+        console.log(new_scr);
+
+        // let sc=[32,12,42,35];
+        // let new_s=sc.filter((value,index)=>{
+        //     return value>15;
+        // })
+        // console.log(new_s);
+
+        let sc=[32,12,42,35];
+        let new_s=sc.find((value,index)=>{
+            return value>15;
+        })
+        console.log(new_s);
+        // let score1=[30,40,50,60];
+        // let new_scr=[]
+        // score1.forEach((value,index)=>{
+        //     new_scr.push(value+5);
+
+        // })
+        // console.log(new_scr)
+
+    </script>
+</body>
+</html>
