@@ -12,20 +12,27 @@
       let b = document.body;
       let left = 0;
       let right=0;
+    //   let up=0;
+    //   let dow=0;
       b.onkeydown = (e) => {
-        //console.log(e.key);
+        console.log(e.key);
         if(e.key=="ArrowRight"){
             left+=5;
             ball.style.left=left+"px";
         }
-        // if(e.key=="ArrowLeft")
-        // {
-        //     left+=5;
-        //     ball.style.right=left+"px";
-        // }
+         if(e.key=="ArrowLeft")
+        {
+            left-=5;
+            ball.style.left=left+"px";
+        }
         if(e.key=="ArrowDown")
         {
             right+=5;
+            ball.style.top=right+"px";
+        }
+        if(e.key=="ArrowUp")
+        {
+            right-=5;
             ball.style.top=right+"px";
         }
       };
