@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="eyehide1.jpg" width="100px " id="ball">
+    <script>
+        ball.style.position="absolute";
+        let topp=0;
+        let l=0;
+        function ballfall(){
+            topp++;
+            if (topp>400){
+            topp=1;
+            l=Math.random()*500;
+            }
+            ball.style.top=topp+"px";
+            ball.style.left=l+"px";
+            setTimeout(ballfall,10);
+            
+        }
+        ballfall()
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
