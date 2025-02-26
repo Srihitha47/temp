@@ -6,6 +6,7 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>Game Points: <span id="score">0</span></h1> <!-- Added score display -->
     <img src="eyeshow.jpeg" width="100px" id="ball" />
     <img src="bucket.jpg" width="100px" id="bucket" />
     <script>
@@ -25,26 +26,24 @@
         bucket.style.top = down + "px";
       };
       let t = 0;
-      let l = 0
+      let l = 0;
+      let gamept = 0; 
+
       function ballFall() {
         t++;
         if (t > 400) {
+          if (Math.abs(l - left) < 25 && Math.abs(t - down) < 25) {
+            gamept++;
+            document.getElementById("score").innerText = gamept; 
+          }
           t = 1;
           l = Math.random() * 500;
         }
         ball.style.top = t + "px";
         ball.style.left = l + "px";
-        setTimeout(ballFall, 10);
+        setTimeout(ballFall, 5);
       }
       ballFall();
-
-      let gamept=0;
-      if(Math.abs( (t + "px"-left + "px")==0) ||-((l + "px" -down + "px")==0) ){
-        gamept++;
-      }
-      print(gamept);
-
-
     </script>
   </body>
 </html>
