@@ -10,23 +10,30 @@
         // a=10;
         // document.write(a);
         // var a;
-        function test(){
+        // function test(){
+        //     if(true){
+        //         var a=10;
+        //     }
+        //     document.write(a);
+
+        // }
+        // test();
+        // function test1(){
+        //     if(true){
+        //         let a1=10;
+        //         //let has within block scope
+        //     }
+        //     document.write(a1);
+
+        // }
+        // test1();
+        (function test(){
             if(true){
                 var a=10;
             }
             document.write(a);
 
-        }
-        test();
-        function test1(){
-            if(true){
-                let a1=10;
-                //let has within block scope
-            }
-            document.write(a1);
-
-        }
-        test1();
+        })();//iife method(immediately invoked function expression)
     </script>
 </body>
 </html>
