@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let a=false;//let a(undefined) a=0 (number) a=null(object) a=true/false[res:false]
+    console.log(typeof(a))
+    a?console.log("true"):console.log("false")
+    //let a=0;
+    // let a=null;
+     let res=a||10
+    // // (nullish core spacing operator)
+    console.log(res)
+    let res1=a??10
+     console.log(res1)
+     let cart={1:0}
+     let res2=cart[1]||10
+     console.log(res2)
+   </script> 
+</body>
+</html>
